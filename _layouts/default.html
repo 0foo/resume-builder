@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    {% include header.html %}
+</head>
+
+<body>
+    {% include about.html %}
+
+    <div class="section-header">Work Experience</div>
+    <hr/>
+
+
+  <!-- This loops through the paginated posts -->
+  {% for page in site.posts %}
+    {% include job.html %}
+    <hr class="job-separator {{ page.class-ident }}"/>
+  {% endfor %}
+  
+
+  <div class="section-header">Education</div>
+  <hr/>
+  
+
+  <article class="education">
+    <span class="university">University of New Orleans</span>,
+    <span class="degree">M.S. - Computer Science (all but thesis)</span> 
+  </article>
+  <article class="education">
+    <span class="university">Louisiana State University</span>,
+    <span>B.S. - Biology with minor in Computer Science</span>
+  </article>
+
+
+  <div class="section-header">Licenses and Certifications</div>
+  <hr/>
+  {% include certs.html %}
+  
+
+<div class="section-header">Selected Skills</div>
+<hr/>
+<ul style="list-style-type: none; margin: 0; padding:0; line-height: 1.7;">
+  <li><b>Languages:</b> Python, Bash, Javascript, PHP 7+, HTML/CSS</li>
+  <li><b>Cloud:</b> AWS</li>
+  <li><b>Containerization:</b> OCI format: Docker/Podman, Orchestration: Compose, Kubernetes, ECS, Swarm</li>
+  <li><b>Datastores:</b> MySql, Postgres, S3/RDS, Sqlite, Redis</li>
+  <li><b>OS:</b> Linux Administration</li>
+  <li><b>Agile:</b> Jira, Trello, Scrum, Standups, Retrospectives</li>
+</ul>
+
+  <script>
+    function lastOfType(className){
+            var allElemsOfType = document.getElementsByClassName(className);
+            if (!allElemsOfType || !allElemsOfType.length) return null;
+            else return allElemsOfType[allElemsOfType.length - 1];
+    }
+
+  lastOfType('job-separator').style.display = 'none'
+  </script>
+<footer>
+
+</footer>
+
+
+</body>
+</html> 

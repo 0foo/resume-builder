@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&family=Roboto+Slab&display=swap');
+
+body {
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: 'EB Garamond', serif;
+    line-height: 1;
+}
+
+.personal-header {
+    display: flex;
+    flex-flow: row;
+    font-size: 22px;
+    /* align-content:  center;  */
+    justify-content: center; 
+    /* margin: 15px 0 25px 0; */
+
+}
+
+.personal-title{
+text-align: center;
+font-size: 22px;
+margin: 7px 0 7px 0;
+}
+
+.contact-phone {
+    /* font-size: 28px; */
+    /* font-weight: bold; */
+}
+
+.personal-website{
+    /* line-height:3rem; */
+}
+.personal-name {
+    font-size:32px;
+    font-weight: bold;
+    line-height:1.4rem;
+    /* border:solid 1px red; */
+    text-align: center;
+    /* margin-bottom: 10px; */
+
+}
+
+.personal-info{
+    /* margin-left: 5%; */
+}
+
+.personal-spacer {
+    margin: 0 1% 0 1%;
+    /* font-size: 45px; */
+    /* line-height: 3rem; */
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.job-title {
+    /* margin: 7px 0 7px 0; */
+    font-size: 18px;
+
+}
+
+.horizontal-spacer {
+    margin:6px 0 6px 0;
+}
+
+.job-description > ul {
+    margin-top: 5px;
+    /* padding-top: 0px; */
+}
+
+.job-block {
+    display:flex;
+}
+
+.job-meta-block {
+    flex-basis: 20%;
+}
+.job-description{
+    flex-basis: 80%;
+    border: solid 0 red;
+}
+
+article * {
+    /* margin: 10px; */
+    line-height: 1.7rem;
+}
+
+.section-header {
+    /* margin-top:30px; */
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:30px;
+
+}
+
+.job-separator:last-of-class {
+    display: none;
+}
+
+.university {
+    font-weight: bold;
+}
+.cert-name{
+    font-weight: bold;
+}
+
+
+.rx-marketing{
+        display: none;
+    } 
+
+
+    @media print {
+
+    
+  }
