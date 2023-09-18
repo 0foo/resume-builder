@@ -111,12 +111,12 @@ article * {
 }
 
 
-.rx-marketing{
-        display: none;
-    } 
+
 
 
     @media print {
 
-    
+        .rx-marketing{
+            display: none;
+        } 
   }
