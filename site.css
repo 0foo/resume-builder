@@ -22,7 +22,14 @@ body {
 .personal-title{
 text-align: center;
 font-size: 22px;
-margin: 7px 0 7px 0;
+margin: 5px;
+}
+
+.personal-location{
+    text-align: center ;
+    font-size: 22px;
+    margin: 5px;
+
 }
 
 .contact-phone {
