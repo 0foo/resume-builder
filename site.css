@@ -2,7 +2,7 @@
 
 body {
     font-size: 16px;
-    padding: 20px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-family: Helvetica, Arial, sans-serif; */
     font-family: 'EB Garamond', serif;
@@ -41,9 +41,9 @@ margin: 5px;
     /* line-height:3rem; */
 }
 .personal-name {
-    font-size:32px;
+    font-size:26px;
     font-weight: bold;
-    line-height:1.4rem;
+    /* line-height:1.4rem; */
     /* border:solid 1px red; */
     text-align: center;
     /* margin-bottom: 10px; */
@@ -121,9 +121,8 @@ article * {
 
 
 
-    @media print {
-
-        .rx-marketing{
-            display: none;
-        } 
-  }
+@media print {
+    .rx-marketing{
+        margin-bottom: 50px;
+    } 
+}
