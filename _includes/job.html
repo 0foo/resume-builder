@@ -1,14 +1,19 @@
+
+
 <article class="job-block">
 
-    <div class="job-meta-block">
+
+    <div class="job-info-block">
+        <div class="job-title title2">
+            {{ page.job-title }}
+        </div>
+    
         <div class="duty-section">
             <div class="company-name">
                 <b>{{ page.company-name }}</b>
             </div>
-            <div class="job-title">
-                {{ page.job-title }}
-            </div>
         </div>
+
         <div class="time-place-section">
             <div class="dates-employed">
                 {{ page.date-start }} to {{ page.date-end }}
@@ -19,9 +24,9 @@
         </div>
    </div>
 
-   
+   <div class="job-description">
+    {{ page.content }}
+  </div>
 
-    <div class="job-description">
-        {{ page.content }}
-    </div>
+
 </article>

@@ -1,103 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&family=Roboto+Slab&display=swap');
 
 body {
-    font-size: 16px;
-    padding: 0px 20px 20px 20px;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    /* font-family: Helvetica, Arial, sans-serif; */
     font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    /* font-family: 'Arial', sans-serif; */
-    line-height: 1;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+
+}
+
+.title1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.title2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title3{
+    font-size: 22px;
 }
 
 .personal-header {
     display: flex;
     flex-flow: row;
-    font-size: 22px;
-    /* align-content:  center;  */
     justify-content: center; 
-    margin: 15px 0 15px 0;
-
-
 }
 
-.personal-title{
-text-align: center;
-font-size: 22px;
-margin: 5px;
-}
-
-.personal-location{
-    text-align: center ;
-    font-size: 22px;
-    margin: 5px;
-
-}
-
-.contact-phone {
-    /* font-size: 28px; */
-    /* font-weight: bold; */
-}
-
-.personal-website{
-    /* line-height:3rem; */
-}
 .personal-name {
-    font-size:22px;
-    font-weight: bold;
-    /* line-height:1.4rem; */
-    /* border:solid 1px red; */
     text-align: center;
-    /* margin-bottom: 10px; */
-
-}
-
-.personal-info{
-    /* margin-left: 5%; */
 }
 
 .personal-spacer {
     margin: 0 1% 0 1%;
-    /* font-size: 45px; */
-    /* line-height: 3rem; */
 }
 
-.company-name {
-    font-weight: bold;
-    font-size: 22px;
-}
+
 
 .job-title {
-    /* margin: 7px 0 7px 0; */
-    font-size: 18px;
-
+    font-size: 20px;
 }
-
+.company-name {
+    font-weight: bold;
+}
 .horizontal-spacer {
-    margin:6px 0 6px 0;
+    margin:1% 0 1% 0;
 }
+
 
 .job-description > ul {
-    margin-top: 5px;
+    margin: 0px;
+    padding: 0px;
+    /* margin-top: 5px; */
     /* padding-top: 0px; */
+    flex-basis: 80%;
 }
 
 .job-block {
     display:flex;
+    justify-content: start;
+    text-align: left;
 }
 
-.job-meta-block {
+.job-info-block {
+    /* display:flex; */
     flex-basis: 20%;
-}
+    min-width: 20%;
+    /* border: solid 1px red; */
+
+} 
+
+
 .job-description{
-    flex-basis: 80%;
-    border: solid 0 red;
+    /* flex-basis: 80%; */
+    /* border: solid 0 red; */
+    width: auto;
 }
 
-article * {
-    /* margin: 10px; */
-    line-height: 1.7rem;
+.job-description > ul {
+    box-sizing: border-box;
+    margin:0;
+    padding-left: 20px;
 }
+
 
 .section-header {
     /* margin-top:30px; */
@@ -105,7 +94,6 @@ article * {
     font-size: 22px;
     font-weight: bold;
     margin-top:30px;
-
 }
 
 .job-separator:last-of-class {
@@ -124,7 +112,37 @@ article * {
 
 
 @media print {
-    .rx-marketing{
+    /* .rx-marketing{
         margin-bottom: 50px;
+    }  */
+    .job-description > ul {
+        flex-basis: 60% !important;
+    }
+
+    .job-info-block {
+        flex-basis: 40% !important;
+        min-width: 40% !important;
     } 
+    body {
+        font-size:  13px;
+    }
+
+    .title1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    
+    .title2{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .title3{
+        font-size: 17px;
+    }
+
+    .print-break {
+        margin-top: 100px;
+    }
 }
